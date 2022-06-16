@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <main>
+        {{- block "main" . }}{{- end }}
+        </main>
+        {{- partial "footer.html" . -}}
+        <script src="js/main.js"></script>
+        <script src="https://kit.fontawesome.com/3f49199352.js" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'darkmode';
+
+body {
+  background-color: $white;
+  color: $black;
+}
+
+nav {
+  background-color: lighten($black, 7%);
+}
+
+body.dark-mode,
+body.dark-mode main * {
+    background: rgb(45, 45, 45);
+    color: #f5f5f5;
+}
+
+nav.dark-mode * {
+  background-color: lighten($black, 7%);
+  color: #f5f5f5;
+}
