@@ -1,16 +1,15 @@
 {
   "name": "clallamlgbt",
   "version": "1.0.0",
-  "description": "",
+  "description": "A custom Hugo template",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "server": "hugo server -D --watch",
     "build": "webpack --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["hugo","theme","bootstrap","fontawesome","webpack","sass"],
+  "author": "Cloud Huxley",
+  "license": "MIT",
   "devDependencies": {
     "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.1.3",

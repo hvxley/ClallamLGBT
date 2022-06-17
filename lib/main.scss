@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-  background-color: lighten($black, 7%);
+  background-color: transparent;
 }
 
 body.dark-mode,
@@ -16,7 +16,7 @@ body.dark-mode main * {
     color: #f5f5f5;
 }
 
-nav.dark-mode * {
+nav.dark-mode {
   background-color: lighten($black, 7%);
   color: #f5f5f5;
 }
