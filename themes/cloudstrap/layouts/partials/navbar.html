@@ -1,0 +1,24 @@
+<nav>
+  <ul class="nav nav-tabs">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    {{ if .HasChildren }}
+    <li class="nav-item {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+      <a class="nav-link" href="#">{{ .Pre }} <span>{{ .Name }}</span></a>
+    </li>
+    <ul class="sub-menu">
+    {{ range .Children }}
+      <li class="nav-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
+    </ul>
+    {{ else }}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ .URL }}">{{ .Pre }} <span>{{ .Name }}</span></a>
+      </li>
+    {{ end }}
+    {{ end }}
+  </ul>
+  {{- partial "dm_button.html" . -}}
+</nav>

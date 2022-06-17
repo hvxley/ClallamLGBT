@@ -1,3 +1,15 @@
+// Definite Colors
 $black: rgba(0,0,0,1);
 $white: rgba(255,255,255,1);
+$gray-10: darken($white, 10%);
+$gray-20: darken($white, 20%);
+$gray-30: darken($white, 30%);
+$gray-40: darken($white, 40%);
+$gray-50: mix($white, $black, 50%);
+$gray-60: lighten($black, 40%);
+$gray-70: lighten($black, 30%);
+$gray-80: lighten($black, 20%);
+$gray-90: lighten($black, 10%);
 $red: rgba(255,0,0,1);
+$dark-gray: rgb(45,45,45);
+$indigo: #360fa3;

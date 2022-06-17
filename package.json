@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "server": "hugo server -D",
-    "server-watch": "hugo server -D --watch"
-    "build": "webpack"
+    "server-watch": "hugo server -D --watch",
+    "build": "webpack",
     "build-watch": "webpack --watch"
   },
   "keywords": ["hugo","theme","bootstrap","fontawesome","webpack","sass"],

@@ -1,4 +1,22 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://clallam.lgbt'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'ClallamLGBTQIA2S+'
 theme = 'cloudstrap'
+copyright = 'Cloud Huxley. All rights reserved.'
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  pre = "<i class='fa fa-heart'></i>"
+  url = '/'
+  weight = -110
+[[menu.main]]
+  name = 'Intro'
+  pre = "<i class='fa fa-road'></i>"
+  url = '/intro'
+  weight = -100
+[[menu.main]]
+  name = 'Social'
+  pre = "<i class='fas fa-people-arrows'></i>"
+  url = 'https://social.clallam.lgbt/'
+  weight = -90
