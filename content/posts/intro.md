@@ -5,5 +5,5 @@ draft: false
 url: /intro
 ---
 
-## Hi everyone, my name is Cloud ^.^
+## Hi everyone, my name is {{ .Site.Author }} ^.^
 Welcome to [clallam.lgbt](https://clallam.lgbt/). Thanks for visiting.

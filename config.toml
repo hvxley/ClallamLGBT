@@ -4,6 +4,9 @@ title = 'ClallamLGBTQIA2S+'
 theme = 'cloudstrap'
 copyright = 'Cloud Huxley. All rights reserved.'
 
+[author]
+  name = 'Cloud Huxley'
+
 [menu]
 [[menu.main]]
   name = 'Home'
