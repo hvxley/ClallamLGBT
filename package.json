@@ -4,8 +4,10 @@
   "description": "A custom Hugo template",
   "private": true,
   "scripts": {
-    "server": "hugo server -D --watch",
-    "build": "webpack --watch"
+    "server": "hugo server -D",
+    "server-watch": "hugo server -D --watch"
+    "build": "webpack"
+    "build-watch": "webpack --watch"
   },
   "keywords": ["hugo","theme","bootstrap","fontawesome","webpack","sass"],
   "author": "Cloud Huxley",

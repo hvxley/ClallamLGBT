@@ -7,9 +7,21 @@ This package is a node module, so you will need the latest version of Node insta
 2. [Hugo Installation](https://gohugo.io/getting-started/installing/ "Hugo Installation")
 
 ## Installation
-Clone this repository and change your working directory
+1. Clone this repository and change your working directory.
 ```bash
 git clone https://github.com/hvxley/ClallamLGBT.git
 cd ClallamLGBT
 ```
-Next,
+2. Install the required node modules.
+```bash
+npm install
+```
+3. Compile the Webpack modules into the Hugo project.
+```bash
+npm run build
+```
+4. The project is now ready to run.
+```bash
+npm run server
+```
+5. Go to http://localhost:1313/ in your browser.
