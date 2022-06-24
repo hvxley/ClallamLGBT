@@ -3,7 +3,7 @@
 @import 'darkmode';
 
 body {
-  background-color: #f5f5f5;
+  background-color: $gray-10;
   color: $gray-60;
   height: 99%;
   width: 99%;
@@ -13,10 +13,33 @@ body {
 body.dark-mode,
 body.dark-mode main * {
     background-color: $gray-60;
-    color: #f5f5f5;
+    color: $gray-10;
+}
+
+body.dark-mode {
+  a {
+    color: $gray-10 !important;
+  }
 }
 
 html {
   height:100%;
   background-image: linear-gradient(to left top, $indigo 0%, $gray-70 100%);
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: $gray-60 !important;
+  }
 }

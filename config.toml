@@ -1,8 +1,8 @@
 baseURL = 'https://clallam.lgbt'
 languageCode = 'en-us'
-title = 'ClallamLGBTQIA2S+'
+title = 'Clallam|LGBTQIA2S+'
 theme = 'cloudstrap'
-copyright = 'Cloud Huxley. All rights reserved.'
+copyright = 'A Girl Named Blaze™. All rights reserved.'
 
 [author]
   name = 'Cloud Huxley'
@@ -14,9 +14,9 @@ copyright = 'Cloud Huxley. All rights reserved.'
   url = '/'
   weight = -110
 [[menu.main]]
-  name = 'Intro'
+  name = 'About'
   pre = "<i class='fa fa-road'></i>"
-  url = '/intro'
+  url = '/about'
   weight = -100
 [[menu.main]]
   name = 'Social'
