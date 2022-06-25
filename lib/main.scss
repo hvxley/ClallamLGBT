@@ -2,30 +2,88 @@
 @import 'variables';
 @import 'darkmode';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  a{
+    color: lighten($indigo, 45%) !important;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:hover, a:active {
+    color: lighten($indigo, 50%) !important;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
   background-color: $gray-10;
   color: $gray-60;
-  height: 99%;
-  width: 99%;
   margin: auto;
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+    background-color: $gray-90;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px $black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $gray-70;
+  -webkit-box-shadow: inset 0 0 0.5rem $gray-80;
+  outline: 1px solid $gray-80;
 }
 
 body.dark-mode,
 body.dark-mode main * {
+    a {
+      color: lighten($indigo, 45%) !important;
+    }
+    a:hover, a:active {
+      color: lighten($indigo, 55%) !important;
+    }
+    nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        font-size: 1rem;
+        display: inline-block;
+      }
+      a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: lighten($indigo, 45%) !important;
+        font-family: 'Open Sans';
+        font-weight: 600;
+      }
+      a:hover, a:active {
+        color: lighten($indigo, 50%) !important;
+        transition: 1;
+      }
+      span.branding {
+        font-weight: 900;
+        font-size: 1.6rem;
+      }
+
+      background-color: rgba(0,0,0,0.75);
+      width: 100%;
+      height: auto;
+    }
+
     background-color: $gray-60;
     color: $gray-10;
 }
 
-body.dark-mode {
-  a {
-    color: $gray-10 !important;
-  }
-}
-
-html {
-  height:100%;
-  background-image: linear-gradient(to left top, $indigo 0%, $gray-70 100%);
-}
 
 nav {
   ul {
@@ -34,12 +92,26 @@ nav {
     list-style: none;
   }
   li {
+    font-size: 1rem;
     display: inline-block;
   }
   a {
     display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    color: $gray-60 !important;
+    color: $indigo !important;
+    font-family: 'Open Sans';
+    font-weight: 600;
   }
+  a:hover, a:active {
+    color: darken($indigo, 15%) !important;
+  }
+  span.branding {
+    font-weight: 900;
+    font-size: 1.6rem;
+  }
+
+  background-color: rgba(255,255,255,0.75);
+  width: 100%;
+  height: auto;
 }

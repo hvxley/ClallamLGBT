@@ -1,17 +1,20 @@
-<nav>
-  <ul>
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-    {{ if .HasChildren }}
-    <li class=" {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-      <a class="" href="#">{{ .Pre }} <span>{{ .Name }}</span></a>
-    </li>
-    {{ else }}
+<nav class="navbar fixed-top">
+  <div class="container-fluid">
+    <ul>
+      <span class="branding">{{ $.Site.Title}}</span>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      {{ if .HasChildren }}
+      <li class=" {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+        <a class="" href="#">{{ .Pre }} <span>{{ .Name }}</span></a>
+      </li>
+      {{ else }}
       <li class="">
         <a class="" href="{{ .URL }}">{{ .Pre }} <span>{{ .Name }}</span></a>
       </li>
-    {{ end }}
-    {{ end }}
-  </ul>
-  {{- partial "dm_button.html" . -}}
+      {{ end }}
+      {{ end }}
+      <li class="">{{- partial "dm_button.html" . -}}</li>
+    </ul>
+  </div>
 </nav>
