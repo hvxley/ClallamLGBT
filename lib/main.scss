@@ -48,70 +48,65 @@ body.dark-mode main * {
     a:hover, a:active {
       color: lighten($indigo, 55%) !important;
     }
-    nav {
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-      li {
-        font-size: 1rem;
-        display: inline-block;
-      }
-      a {
-        display: block;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        color: lighten($indigo, 45%) !important;
-        font-family: 'Open Sans';
-        font-weight: 600;
-      }
-      a:hover, a:active {
-        color: lighten($indigo, 50%) !important;
-        transition: 1;
-      }
-      span.branding {
-        font-weight: 900;
-        font-size: 1.6rem;
-      }
 
-      background-color: rgba(0,0,0,0.75);
-      width: 100%;
-      height: auto;
-    }
-
-    background-color: $gray-60;
-    color: $gray-10;
+  background-color: $gray-60;
+  color: $gray-10;
 }
 
+main {
+  position: absolute;
+  margin-top: 3rem;
+}
 
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  li {
-    font-size: 1rem;
-    display: inline-block;
-  }
-  a {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    color: $indigo !important;
-    font-family: 'Open Sans';
-    font-weight: 600;
-  }
-  a:hover, a:active {
-    color: darken($indigo, 15%) !important;
-  }
-  span.branding {
-    font-weight: 900;
-    font-size: 1.6rem;
-  }
+span {
+  margin: 0.5rem 0.5rem;
+}
 
-  background-color: rgba(255,255,255,0.75);
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.45);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
   width: 100%;
-  height: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
