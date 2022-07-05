@@ -2,7 +2,7 @@
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-      <a href="#">About</a>
+      <a href="#"><i class="fas fa-book-open"></i> About</a>
       <a href="#">Resources</a>
       <a href="#">Social</a>
       <a href="#">Contact</a>
@@ -15,6 +15,6 @@
 
 <div class="container-fluid fixed-top">
   <span class="btn btn-outline-dark float-start" style="font-size:2rem;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
-  <span class="float-start"><h1 class="display-4">{{ $.Site.Title }}</h1></span>
-  <span class="float-end">{{- partial "dm_button.html" . -}}</span>
+  <span class="float-start"><h4 class="display-4">{{ $.Site.Title }}</h4></span>
+  <span class="float-start">{{- partial "dm_button.html" . -}}</span>
 </div>

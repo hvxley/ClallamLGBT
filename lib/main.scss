@@ -58,10 +58,6 @@ main {
   margin-top: 3rem;
 }
 
-span {
-  margin: 0.5rem 0.5rem;
-}
-
 .overlay {
   height: 100%;
   width: 0;
@@ -100,6 +96,7 @@ span {
   top: 20px;
   right: 45px;
   font-size: 60px;
+  x-index: 5;
 }
 
 @media screen and (max-height: 450px) {
